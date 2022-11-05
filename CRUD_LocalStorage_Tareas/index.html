@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de tareas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ========== LINK DE LA LIBRERIA PARA ICONOS ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- ========== NAV ========== -->
+    <header>
+        <div class="nav">
+            <h1>LISTADO DE TAREAS</h1>
+        </div>
+    </header>
+
+    <!-- ========== FORMULARIO ========== -->
+    <form id="formulario">
+        <div class="container">
+            <h1>Registro de Tareas</h1>
+            <hr>
+
+            <label><b>Codigo:</b></label><br>
+            <input type="number" id="codigo" required><br>
+
+            <label><b>Nombre:</b></label><br>
+            <input type="text" id="nombre" required><br>
+
+            <label><b>Descripcion:</b></label><br>
+            <input type="text" id="descripcion" required><br>
+
+            <label><b>Importancia:</b></label><br>
+            <select id="importancia" required><br>
+                <option selected>Seleccione la importancia</option>
+                <option value="1">Muy importante</option>
+                <option value="2">Poco importante</option>
+                <option value="3">Nada importante</option>
+            </select><br>
+
+            <label>
+                <input type="checkbox" id="estado"><b>COMPLETADO</b>
+            </label>
+
+            <div class="clearfix">
+                <button type="submit" class="btnAgregar">Agregar</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- ========== TABLA ========== -->
+    <div class="container">
+        <hr>
+        <h1>Tabla de Tareas</h1>
+        <hr>
+
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Importancia</th>
+                    <th>Estado</th>
+                    <th>Opcion</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

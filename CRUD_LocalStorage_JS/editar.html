@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restaurante</title>
+
+    <!-- ========== Bootstrap CSS ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- ========== Navegacion ========== -->
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-4 h1 text-primary">Menu Restaurante Criterion</span>
+        </div>
+    </nav>
+
+    <!-- ========== Formulario ========== -->
+    <div class="container mt-4 justify-content-center">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Editar plato</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="formulario">
+                            <div class="mb-3">
+                                <label class="form-label">Codigo:</label>
+                                <input type="number" class="form-control" id="codigoActualizado" >
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombreActualizado">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenido:</label>
+                                <textarea class="form-control" id="contenidoActualizado"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tipo:</label>
+                                <select class="form-select" id="tipoActualizado">
+                                    <option selected>Seleccione la categoria</option>
+                                    <option value="1">Entrada</option>
+                                    <option value="2">Fuerte</option>
+                                    <option value="3">Postre</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Precio:</label>
+                                <input type="number" class="form-control" id="precioActualizado">
+                            </div>
+                        </form>
+                        <button type="submit" class="btn btn-success" onclick="actualizar(i);">Actualizar</button>
+                        <button type="submit" class="btn btn-warning">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Bootstrap JS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- ========== Ruta archivo JS ========== -->
+    <script src="script.js"></script>
+</body>
+
+</html>

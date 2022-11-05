@@ -1,0 +1,118 @@
+* {box-sizing: border-box}
+h1{
+    padding: 20px;
+    color: #055337;
+    text-align: center;
+}
+
+/************** CSS DEL NAV (TITULO) **************/
+
+/*Agrega color de fondo negro al nav*/
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Estilo del titulo */
+.nav h1 {
+    font-family: sans-serif;
+    color: aquamarine;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+}
+
+/************** CSS DEL FORMULARIO **************/
+
+form{border:2px solid #ccc;
+text-align: center;
+}
+
+/* Estilo del campo de texto */
+input[type=text], input[type=number], select {
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number]:focus, select:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Estilo del boton */
+.btnAgregar {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 15px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+}
+
+.btnAgregar:hover {
+    opacity:1;
+}
+
+/************** CSS DE LA TABLA **************/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/************** CSS DE BOTONES DE EDITAR Y ELIMINAR **************/
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-pencil {
+    background: #0b9c1e;
+    color: white;
+}
+
+.fa-trash {
+    background: #b41414;
+    color: white;
+}
+
+button{
+    border: none;
+}
